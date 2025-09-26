@@ -4,6 +4,10 @@ namespace DisplayASequenceOfUniqueRandomValues
 {
     class Program
     {
+        //I didn't implement any exception handling to save time its proof of concept. This implementation is modified
+        //from original idea to allow for any range of numbers and ranges greater than the sequence length.
+
+        //Display a sequence of unique random values within any range.
         private static void DisplayASequenceOfUniqueRandomValues(int lowerBound, int upperBound, int sequenceLength)
         {
             Random rand = new Random();
@@ -34,7 +38,7 @@ namespace DisplayASequenceOfUniqueRandomValues
 
         public static void Main(String[] args)
         {
-            DisplayASequenceOfUniqueRandomValues(1, 50, 40);
+            DisplayASequenceOfUniqueRandomValues(1, 25, 25);
         }
     }
 }
