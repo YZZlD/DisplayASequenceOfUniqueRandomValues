@@ -30,15 +30,20 @@ namespace DisplayASequenceOfUniqueRandomValues
                 Console.Write(sequence[index] + " ");
                 sequence[index] = sequence[upperBound - x - 1];
 
-                //This is debug line to check array status.
-                // sequence[upperBound - x - 1] = 0;
-                // Console.WriteLine(string.Join(' ', sequence));
+                /*DEBUG
+                        sequence[upperBound - x - 1] = 0;
+                        Console.WriteLine(string.Join(' ', sequence));
+                */
             }
         }
 
         public static void Main(String[] args)
         {
-            DisplayASequenceOfUniqueRandomValues(1, 25, 25);
+
+            DisplayASequenceOfUniqueRandomValues(1, 10, 10);
+            //DisplayASequenceOfUniqueRandomValues(1, 100, 100);
+            //DisplayASequenceOfUniqueRandomValues(1, 100, 25);
+            //DisplayASequenceOfUniqueRandomValues(1, 1000, 200);
         }
     }
 }
